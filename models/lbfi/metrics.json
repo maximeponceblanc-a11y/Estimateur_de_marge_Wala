@@ -1,0 +1,69 @@
+{
+  "source": "lbfi",
+  "n_total": 6131,
+  "n_train": 4904,
+  "n_test": 1227,
+  "acceptance_rate": 0.3094111890393084,
+  "classifier": {
+    "accuracy": 0.7416462917685411,
+    "roc_auc": 0.7665895109675014,
+    "features": [
+      "quantite",
+      "produit_cluster",
+      "client_encoded",
+      "month",
+      "month_sin",
+      "month_cos",
+      "month_known",
+      "season_4m",
+      "cout_total",
+      "prix_total",
+      "prix_unitaire"
+    ]
+  },
+  "margin_regressor": {
+    "target": "coefficient",
+    "mode": "coeff_times_cost",
+    "target_transform": "log",
+    "mae": 218.619955514565,
+    "mae_coeff": 0.07074593245775847,
+    "mae_baseline_eur": 285.5211496157202,
+    "within_20pct": 0.963963963963964,
+    "n_rows": 1665,
+    "features": [
+      "quantite",
+      "produit_cluster",
+      "client_encoded",
+      "month",
+      "month_sin",
+      "month_cos",
+      "month_known",
+      "season_4m",
+      "cout_total",
+      "client_coeff_prior",
+      "produit_coeff_prior",
+      "hier_coeff_prior"
+    ],
+    "coeff_clip": [
+      0.9,
+      1.3572056036110036
+    ],
+    "small_n_blend": 0.0,
+    "coeff_training": {
+      "min": 0.9011442592756379,
+      "p10": 1.0,
+      "median": 1.1669859116689985,
+      "p90": 1.2999999999999998,
+      "max": 1.3564972783358882
+    },
+    "cost_training_range_eur": {
+      "min": 39.69307540854701,
+      "median": 925.5557555133335,
+      "max": 143684.4078935348
+    }
+  },
+  "regressor_target": "coefficient",
+  "regressor_mode": "coeff_times_cost",
+  "target_transform": "log",
+  "extra_encodings": []
+}
